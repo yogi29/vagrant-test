@@ -18,7 +18,7 @@ yum install -y php php-cli php-common php-mysql
 
 #Mysql
 yum install -y https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm
-sudo yum install -y mysql-community-server mysql-community-client MySQL-python
+sudo yum -y install mysql-community-server mysql-community-client MySQL-python
 sudo systemctl enable mysqld
 sudo systemctl start mysqld
 
