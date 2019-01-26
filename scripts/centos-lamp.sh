@@ -10,7 +10,7 @@ sudo systemctl stop httpd
 rm -rf /var/www/html
 ln -s /vagrant /var/www/html
 
-chcon -R -t httpd_sys_content_t /var/www/html
+chcon -R -t httpd_sys_content_t /var/www/html/
 sudo systemctl start httpd
 
 #PHP
