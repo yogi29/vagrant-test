@@ -23,6 +23,11 @@ systemctl enable mysqld
 systemctl start mysqld
 
 #Download starter content from github
+cd /vagrant
+sudo -u vagrant wget -q https://raw.githubusercontent.com/yogi29/vagrant-test/master/files/index.html
+sudo -u vagrant wget -q https://raw.githubusercontent.com/yogi29/vagrant-test/master/files/info.php
+
+
 
 #Restart Apache
 systemctl restart httpd
